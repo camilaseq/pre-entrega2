@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vipeluquerias - Inicio</title>
+    
+    <!-- Librerías de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .navbar {
+            background-color: #000000;
+            color: white;
+            border-radius: 10px; 
+            padding: 10px; 
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        .navbar-brand img {
+            max-width: 50px;
+            height: auto;
+        }
+
+        .navbar-nav {
+            justify-content: center;
+        }
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important; 
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #000000;
+        }
+
+        .container img {
+            width: 100%; /* Modificado para que todas las imágenes tengan el mismo ancho */
+            height: auto;
+            margin-bottom: 20px;
+            transition: opacity 0.5s ease; 
+            border-radius: 10px; 
+            object-fit: cover; 
+            object-position: center; 
+        }
+
+        .text-container {
+            text-align: center;
+        }
+
+        .text-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="img" alt="Line" src="aa896228-f8b2-42e2-a76c-482bf4f2d77c.png" width="200" height="100" style="margin-left: 550px; margin-top: 50;">
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="precios.html">Precios</a>
+                            <a class="dropdown-item" href="informacion.html">Información</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="salones.html">Salones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iniciar-sesion.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de la página de servicios -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service" onclick="toggleDescription('service2')">
+                    <img src="47c829_bd631c312ba9438ebcaa4e0179d2d00e~mv2.webp" alt="Servicio 2">
+                    <div class="service-description" id="service2" style="display: none;">
+                        <h3>Tintura</h3>
+                        <p>Descripción detallada del Servicio 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service" onclick="toggleDescription('service3')">
+                    <img src="47c829_dd1d7bc9dadd41ea8e754946f7f9c549~mv2.webp" alt="Servicio 3">
+                    <div class="service-description" id="service3" style="display: none;">
+                        <h3>Corte</h3>
+                        <p>Descripción detallada del Servicio 3.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service" onclick="toggleDescription('service4')">
+                    <img src="47c829_7390ddbff6584b92be6e7519848ac7ec~mv2.webp" alt="Servicio 4">
+                    <div class="service-description" id="service4" style="display: none;">
+                        <h3>Peinado</h3>
+                        <p>Descripción detallada del Servicio 4.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service" onclick="toggleDescription('service5')">
+                    <img src="manicura-otono-3_07f1bfa3_1280x1829.jpg" alt="Servicio 5">
+                    <div class="service-description" id="service5" style="display: none;">
+                        <h3>Manicuria</h3>
+                        <p>Descripción detallada del Servicio 5.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service" onclick="toggleDescription('service6')">
+                    <img src="maquillaje-facil-looks-1320x743.webp" alt="Servicio 6">
+                    <div class="service-description" id="service6" style="display: none;">
+                        <h3>Maquillaje</h3>
+                        <p>Descripción detallada del Servicio 6.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service" onclick="toggleDescription('service7')">
+                    <img src="mixta-1.webp" alt="Servicio 7">
+                    <div class="service-description" id="service7" style="display: none;">
+                        <h3>Limpieza Facial</h3>
+                        <p>Descripción detallada del Servicio 7.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para mostrar/ocultar la descripción del servicio -->
+    <script>
+        function toggleDescription(serviceId) {
+            var description = document.getElementById(serviceId);
+            description.style.display = (description.style.display === 'none' || description.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+
+    <!-- Librerías de JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

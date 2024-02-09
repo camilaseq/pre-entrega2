@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;  color: white;">
+    <img className="img" alt="Line" src="aa896228-f8b2-42e2-a76c-482bf4f2d77c.png" width="200" height="100" style="margin-left: 550px; margin-top: 50;">
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Precios</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: black;
+                color: white;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+            }
+
+            nav {
+                background-color: black; /* Cambiamos el color de fondo a negro */
+                padding: 10px;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav li {
+                margin-right: 20px;
+                position: relative;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #fff;
+                padding: 10px;
+                display: block;
+            }
+
+            nav ul ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #333;
+            }
+
+            nav ul li:hover > ul {
+                display: inherit;
+            }
+
+            nav ul ul li {
+                width: 200px;
+                float: none;
+                display: list-item;
+                position: relative;
+            }
+
+            nav ul ul ul li {
+                position: relative;
+                top: -60px;
+                left: 200px;
+            }
+
+            #precios {
+                padding: 20px;
+                max-width: 800px;
+                margin: 20px auto;
+                background-color: #333;
+                border-radius: 10px;
+            }
+
+            #precios table {
+                width: 100%;
+                border-collapse: collapse;
+                color: white;
+            }
+
+            #precios th, #precios td {
+                padding: 10px;
+                border: 1px solid #555;
+                text-align: left;
+            }
+
+            #precios th {
+                background-color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li>
+                    <a href="#">Servicios</a>
+                    <ul>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="informacion.html">Informacion</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="salones.html">Salones</a></li>
+                <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+
+        <div id="precios">
+            <h2>Lista de Precios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Servicio</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Corte</td>
+                        <td>$6.900</td>
+                    </tr>
+                    <td>Brushing</td>
+                    <td>desde $4500</td>
+                     <tr>
+                     <td>Secado y modelado: </td>
+                     <td>$3100</td>
+                     <tr>
+                     <td>Corte caballero (Incl. lavado)</td>
+                     <td>$7500</td>
+                     <tr>
+                     <td>Corte niño (Hasta 10 años)</td>
+                     <td>$6900</td>
+                     <tr>
+                     <td>Barbería completa</td>
+                     <td>$8500</td>
+                     <tr>
+                     <td>Shock de Keratina</td>
+                     <td>$17500</td>
+                     <tr>
+                     <td>Peinado semirecogido</td>
+                     <td>$13500</td>
+                     <tr>
+                    <td>Peinado recogido</td>
+                    <td>$20400</td>
+                    <tr>
+                    <td>Experiencia Corte Sir Fausto</td>
+                    <td>$7000</td>
+                    <tr>
+                    <td>Tratamiento Barba Sir Fausto:</td>
+                    <td>$6200</td>
+                    <tr>
+                    <td>Manos</td>
+                    <td>$5300</td>
+                    <tr>
+                    <td>Pedicuría:</td> 
+                    <td>$7900</td>
+                    <tr>
+                    <td>Coloración Majirel/Wella</td>
+                    <td>$27000</td>
+                    <tr>
+                    <td>Coloración INOA</td>
+                    <td>$37000</td>
+                    <tr>
+                    <td>Reflejos con gorra:</td>
+                    <td>$42000</td>
+                    <tr>
+                    <td>Balayage:</td>
+                    <td>$55000</td>
+                    <tr>
+                    <td>Lavado común:</td>
+                    <td>$2700</td>
+                    <tr>
+                    <td>Lavado L’Oréal Professionnel:</td>
+                    <td>$5000</td>
+                    <tr>
+                    <td>Lavado Kérastase:</td>
+                    <td>$5800</td>
+                    <tr>
+                    <td>Limpieza de Cutis:</td>
+                    <td>Consultar</td>
+                    <tr>
+                    <td>Diseño de cejas:</td>
+                    <td>$6600</td>
+                    <tr>
+                    <td>Maquillaje:</td>
+                    <td>$25000</td>
+                    <tr>
+                    <td>Pierna entera:</td>
+                    <td>$5000</td>
+                    <tr>
+                    <td>Media pierna:</td>
+                    <td>$3800</td>
+                    </tr>
+                    <td>Axilas:</td>
+                    <td>$3800</td>
+                    <tr>
+                    <td>Cejas:</td> 
+                    <td>$6000</td>
+                    </tr>
+                    <td>Tira de Cola:</td>
+                    <td>$4800</td>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+</body>
+</html>

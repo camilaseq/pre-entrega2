@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            background-color: black; 
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: black; 
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 20px; 
+            justify-content: center;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000000; 
+        }
+
+        nav ul li:hover > ul {
+            display: block; 
+        }
+
+        nav ul ul li {
+            width: 100%;
+        }
+
+        nav ul ul ul li {
+            position: relative;
+            top: -60px;
+            left: 200px;
+        }
+
+        #info-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: hsl(0, 0%, 100%);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        #info-container img {
+            max-width: 100%;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+        }
+
+        #info-text {
+            overflow: hidden;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <img className="img" alt="Line" src="aa896228-f8b2-42e2-a76c-482bf4f2d77c.png" width="200" height="100" style="margin-left: 40px; margin-top: 50;">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="informacion.html">Informacion</a></li>
+                </ul>
+            </li>
+            <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="salones.html">Salones</a></li>
+            <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <div id="info-container">
+        <img src="47c829_dca7f48a71004593a8a50e1699ef85b0~mv2.webp" alt="Imagen de la Empresa">
+        <div id="info-text">
+            <h2>Nosotros</h2>
+            <p>Los fundadores de Vipeluquería’s decidieron explorar un nicho en el rubro de las peluquerías, dándole un marco empresarial a lo que se conocía tradicionalmente.
+                ​
+                Con el foco en que cada profesional desarrolle su máximo potencial, se ideó un sistema donde los peluqueros dentro de los salones de Vipeluquería’s solo deben realizar las tareas de estilismo, confiando en el equipo de profesionales en administración, marketing y comunicación las respectivas áreas del negocio. Esto ayuda a potenciar el conocimiento de todos los expertos y aplicarlo para ofrecerles un servicio diferencial en calidad y experiencia a nuestros clientes.
+                ​
+                Gracias a esto, el primer salón se inaugura con marcadas distinciones de las peluquerías tradicionales. Con los años, el mercado demandaba una mayor cantidad de peluquerías que cumplieran con estas características, y a partir de ese momento comienza la expansión de Vipeluquería’s con salones y franquicias en Argentina.
+                ​
+                En los años transitados, crecimos junto a nuestros clientes, expandiendo los horizontes y sumando servicios a medida que la tendencia estética lo demandaba. Así es como a principios de 2018 decidimos extender el sector de barbería y darle vida propia, inaugurando el salón exclusivo para caballeros Vip Men Barber Shop.
+                ​
+                A fin del 2018, adquirimos las sucursales de Leo Paparella, y así Vipeluquerías se convirtió en la marca de peluquería más importante de la región contando con 30 salones en Argentina y próximas aperturas destinadas a satisfacer las necesidades de nuestra clientas con los mejores servicios y productos.</p>
+        </div>
+    </div>
+</body>
+</html>
