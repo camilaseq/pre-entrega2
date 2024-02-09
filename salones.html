@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Agregar enlace al archivo CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000000;
+        }
+
+        nav ul li:hover > ul {
+            display: inherit;
+        }
+
+        nav ul ul li {
+            width: 200px;
+            float: none;
+            display: list-item;
+            position: relative;
+        }
+
+        nav ul ul ul li {
+            position: relative;
+            top: -60px;
+            left: 200px;
+        }
+
+        #map-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        #map img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .location-info {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <img className="img" alt="Line" src="aa896228-f8b2-42e2-a76c-482bf4f2d77c.png" width="200" height="100" style="margin-left: 550px; margin-top: 50;">
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="informacion.html">Informacion</a></li>
+                </ul>
+            </li>
+            <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="salones.html">Salones</a></li>
+            <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <div id="map-container">
+        <div id="map">
+            <a href="#" class="location-info">
+                <img src="1617656678_848202_1617656762_noticia_normal.jpg" alt="Galerias Pacifico">
+                <p>Dirección: Florida 345</p>
+                <p>Teléfono: 123-456-7890</p>
+                <p>Horarios: Lunes a Domingos 10am-21pm</p>
+            </a>
+
+            <a href="#" class="location-info">
+                <img src="1617656678_848202_1617656762_noticia_normal.jpg" alt="Av Santa Fe">
+                <p>Dirección: Av Santa Fe 1198</p>
+                <p>Teléfono: 987-654-3210</p>
+                <p>Horarios: Lunes a Sábado 9am-20pm</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
